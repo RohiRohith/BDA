@@ -1,0 +1,24 @@
+all commands should run in master
+
+**batch mode
+
+-->Pig -x local myfile.Pig
+
+
+input, outputs files should be  in master
+
+-->Pig -x mapreduce myfile.pig
+
+ here input output files are in hdfs
+
+ pig file should be in master
+
+**interactive Mode (grunt)
+
+-->Pig -x local  (local)
+
+
+-->pig (hdfs)
+
+
+file path same as batch mode
