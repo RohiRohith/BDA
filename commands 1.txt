@@ -1,0 +1,8 @@
+* cat input.txt |python3 mapper.py 
+* cat input.txt |python3 mapper.py|sort|python3 reducer.py 
+* hadoop jar '/home/hdoop/hadoop/share/hadoop/tools/lib/hadoop
+streaming-3.3.6.jar' -file mapper.py -mapper mapper.py -file reducer.py -reducer reducer.py 
+input /bda1/input.txt -output /bda1/oup1
+* hdfs dfs -cat /bda1/oup1/part-00000
+* hdfs dfs -get /bda/output/part-00000 /home/hdoop
+* Cat part-0000

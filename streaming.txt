@@ -1,0 +1,1 @@
+hadoop jar '/home/hdoop/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar' -files /home/hdoop/210968016_BDA/Week2/textmapperW2.py#textmapperW2.py,/home/hdoop/210968016_BDA/Week2/textreducerW2.py#textreducerW2.py -mapper 'python3 textmapperW2.py' -reducer 'python3 textreducerW2.py' -input  /210968016_BDA/input.txt -output /210968016_BDA/output
